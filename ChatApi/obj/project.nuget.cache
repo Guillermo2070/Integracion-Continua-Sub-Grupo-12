@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VR/3FdOB/LA=",
+  "dgSpecHash": "smClmYBvym8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\FELIPE QUINTERO\\OneDrive\\Escritorio\\chat-signalr-project\\chat-signalr-project\\ChatApi\\ChatApi.csproj",
+  "projectFilePath": "C:\\Users\\FELIPE QUINTERO\\OneDrive\\Escritorio\\chat-signalr-project\\ChatApi\\ChatApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\FELIPE QUINTERO\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.3.0\\microsoft.aspnetcore.authentication.abstractions.2.3.0.nupkg.sha512",
     "C:\\Users\\FELIPE QUINTERO\\.nuget\\packages\\microsoft.aspnetcore.authorization\\2.3.0\\microsoft.aspnetcore.authorization.2.3.0.nupkg.sha512",

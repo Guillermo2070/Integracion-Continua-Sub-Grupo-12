@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\FELIPE QUINTERO\\OneDrive\\Escritorio\\chat-signalr-project\\chat-signalr-project\\ChatApi\\ChatApi.csproj": {}
+    "C:\\Users\\FELIPE QUINTERO\\OneDrive\\Escritorio\\chat-signalr-project\\ChatApi\\ChatApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\FELIPE QUINTERO\\OneDrive\\Escritorio\\chat-signalr-project\\chat-signalr-project\\ChatApi\\ChatApi.csproj": {
+    "C:\\Users\\FELIPE QUINTERO\\OneDrive\\Escritorio\\chat-signalr-project\\ChatApi\\ChatApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\FELIPE QUINTERO\\OneDrive\\Escritorio\\chat-signalr-project\\chat-signalr-project\\ChatApi\\ChatApi.csproj",
+        "projectUniqueName": "C:\\Users\\FELIPE QUINTERO\\OneDrive\\Escritorio\\chat-signalr-project\\ChatApi\\ChatApi.csproj",
         "projectName": "ChatApi",
-        "projectPath": "C:\\Users\\FELIPE QUINTERO\\OneDrive\\Escritorio\\chat-signalr-project\\chat-signalr-project\\ChatApi\\ChatApi.csproj",
+        "projectPath": "C:\\Users\\FELIPE QUINTERO\\OneDrive\\Escritorio\\chat-signalr-project\\ChatApi\\ChatApi.csproj",
         "packagesPath": "C:\\Users\\FELIPE QUINTERO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\FELIPE QUINTERO\\OneDrive\\Escritorio\\chat-signalr-project\\chat-signalr-project\\ChatApi\\obj\\",
+        "outputPath": "C:\\Users\\FELIPE QUINTERO\\OneDrive\\Escritorio\\chat-signalr-project\\ChatApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
