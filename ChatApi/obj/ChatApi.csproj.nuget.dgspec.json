@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\guill\\chat-signalr-project\\chat-signalr-project\\ChatApi\\ChatApi.csproj": {}
+    "C:\\Users\\FELIPE QUINTERO\\OneDrive\\Escritorio\\chat-signalr-project\\chat-signalr-project\\ChatApi\\ChatApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\guill\\chat-signalr-project\\chat-signalr-project\\ChatApi\\ChatApi.csproj": {
+    "C:\\Users\\FELIPE QUINTERO\\OneDrive\\Escritorio\\chat-signalr-project\\chat-signalr-project\\ChatApi\\ChatApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\guill\\chat-signalr-project\\chat-signalr-project\\ChatApi\\ChatApi.csproj",
+        "projectUniqueName": "C:\\Users\\FELIPE QUINTERO\\OneDrive\\Escritorio\\chat-signalr-project\\chat-signalr-project\\ChatApi\\ChatApi.csproj",
         "projectName": "ChatApi",
-        "projectPath": "C:\\Users\\guill\\chat-signalr-project\\chat-signalr-project\\ChatApi\\ChatApi.csproj",
-        "packagesPath": "C:\\Users\\guill\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\guill\\chat-signalr-project\\chat-signalr-project\\ChatApi\\obj\\",
+        "projectPath": "C:\\Users\\FELIPE QUINTERO\\OneDrive\\Escritorio\\chat-signalr-project\\chat-signalr-project\\ChatApi\\ChatApi.csproj",
+        "packagesPath": "C:\\Users\\FELIPE QUINTERO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\FELIPE QUINTERO\\OneDrive\\Escritorio\\chat-signalr-project\\chat-signalr-project\\ChatApi\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\guill\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\FELIPE QUINTERO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -77,7 +82,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.410/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
