@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  chatapi:
+    build:
+      context: ./ChatApi
+      dockerfile: DockerFile
+    ports:
+      - "5235:5235"  # Cambia según tu puerto interno
+    depends_on:
+      - sqlserver
+    environment:
+      - ASPNETCORE_ENVIROMENT=Developement;
+    networks:
+      - chatnetwork
+
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    ports:
+      -"1433:1433"
+    environment:
+      SA_PASSWORD: "ChatApi.2025"
+      ACCEPT_EULA: "Y"
+    networks:
+      - chatnetwork
+networks:
+  chatnetwork:
+    driver: bridge
