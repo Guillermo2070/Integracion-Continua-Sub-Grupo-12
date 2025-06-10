@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  chatapi:
+    build:
+      context: ./ChatApi
+      dockerfile: Dockerfile
+    ports:
+      - "5235:80"
+    depends_on:
+      - sqlserver
+    networks:
+      - app-network
+
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: sqlserver
+    environment:
+      SA_PASSWORD: "YourStrong@Passw0rd"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+    networks:
+      - app-network
+
+  client:
+    image: nginx:alpine
+    container_name: chat-client
+    volumes:
+      - ./Client:/usr/share/nginx/html
+    ports:
+      - "8081:80"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
