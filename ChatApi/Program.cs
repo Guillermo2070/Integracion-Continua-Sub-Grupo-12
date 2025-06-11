@@ -11,11 +11,9 @@ builder.Services.AddSignalR(); // Agrega el servicio de SignalR
 var app = builder.Build();
 
 // Configurar Swagger solo en entorno de desarrollo
-if (app.Environment.IsDevelopment())
-{
+
     app.UseSwagger();
     app.UseSwaggerUI();
-}
 
 app.UseHttpsRedirection();
 

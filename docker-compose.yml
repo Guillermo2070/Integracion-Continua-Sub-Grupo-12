@@ -13,6 +13,23 @@ services:
     volumes:
       - sqlserver_data:/var/opt/mssql
 
+  jenkins:
+    build:
+      context: .
+      dockerfile: Dockerfile.jenkins
+    image: my-custom-jenkins
+    ports:
+      - "9080:8080"
+      - "50000:50000"
+    volumes:
+      - jenkins_data:/var/jenkins_home
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./jenkins_home:/var/jenkins_home
+    environment:
+      - DOCKER_HOST=unix:///var/run/docker.sock
+    networks:
+      - jenkins_network
+
   chatapi:
     container_name: chat_api
     build:
@@ -26,12 +43,14 @@ services:
       ASPNETCORE_URLS: "http://+:8080"
     depends_on:
       - sqlserver
+    networks:
+      - app_network
     restart: unless-stopped
 
   clientehtml:
-    container_name: cliente_html_nginx
+    container_name: cliente_html
     build:
-      context: ./ClientApp
+      context: ./Client
       dockerfile: Dockerfile
     ports:
       - "8000:80"
@@ -39,5 +58,14 @@ services:
       - chatapi
     restart: unless-stopped
 
-volumes:
+volumes: 
+  jenkins_data:
   sqlserver_data:
+
+networks:
+  jenkins_network:
+    name: jenkins_network
+    driver: bridge
+  app_network: 
+    name: app_network
+    driver: bridge
