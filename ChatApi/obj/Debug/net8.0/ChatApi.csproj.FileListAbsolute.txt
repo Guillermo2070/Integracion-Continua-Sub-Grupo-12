@@ -164,3 +164,43 @@ C:\Users\FELIPE QUINTERO\OneDrive\Escritorio\chat-signalr-project\ChatApi\obj\De
 C:\Users\FELIPE QUINTERO\OneDrive\Escritorio\chat-signalr-project\ChatApi\obj\Debug\net8.0\ChatApi.pdb
 C:\Users\FELIPE QUINTERO\OneDrive\Escritorio\chat-signalr-project\ChatApi\obj\Debug\net8.0\ChatApi.genruntimeconfig.cache
 C:\Users\FELIPE QUINTERO\OneDrive\Escritorio\chat-signalr-project\ChatApi\obj\Debug\net8.0\ref\ChatApi.dll
+C:\Users\JEICO\Integracion-Continua-Sub-Grupo-12\ChatApi\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\JEICO\Integracion-Continua-Sub-Grupo-12\ChatApi\bin\Debug\net8.0\appsettings.json
+C:\Users\JEICO\Integracion-Continua-Sub-Grupo-12\ChatApi\bin\Debug\net8.0\ChatApi.staticwebassets.endpoints.json
+C:\Users\JEICO\Integracion-Continua-Sub-Grupo-12\ChatApi\bin\Debug\net8.0\ChatApi.exe
+C:\Users\JEICO\Integracion-Continua-Sub-Grupo-12\ChatApi\bin\Debug\net8.0\ChatApi.deps.json
+C:\Users\JEICO\Integracion-Continua-Sub-Grupo-12\ChatApi\bin\Debug\net8.0\ChatApi.runtimeconfig.json
+C:\Users\JEICO\Integracion-Continua-Sub-Grupo-12\ChatApi\bin\Debug\net8.0\ChatApi.dll
+C:\Users\JEICO\Integracion-Continua-Sub-Grupo-12\ChatApi\bin\Debug\net8.0\ChatApi.pdb
+C:\Users\JEICO\Integracion-Continua-Sub-Grupo-12\ChatApi\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\JEICO\Integracion-Continua-Sub-Grupo-12\ChatApi\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\JEICO\Integracion-Continua-Sub-Grupo-12\ChatApi\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Users\JEICO\Integracion-Continua-Sub-Grupo-12\ChatApi\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\JEICO\Integracion-Continua-Sub-Grupo-12\ChatApi\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\JEICO\Integracion-Continua-Sub-Grupo-12\ChatApi\bin\Debug\net8.0\Microsoft.Extensions.ObjectPool.dll
+C:\Users\JEICO\Integracion-Continua-Sub-Grupo-12\ChatApi\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\JEICO\Integracion-Continua-Sub-Grupo-12\ChatApi\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\JEICO\Integracion-Continua-Sub-Grupo-12\ChatApi\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\JEICO\Integracion-Continua-Sub-Grupo-12\ChatApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\JEICO\Integracion-Continua-Sub-Grupo-12\ChatApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\JEICO\Integracion-Continua-Sub-Grupo-12\ChatApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\JEICO\Integracion-Continua-Sub-Grupo-12\ChatApi\bin\Debug\net8.0\System.Net.WebSockets.WebSocketProtocol.dll
+C:\Users\JEICO\Integracion-Continua-Sub-Grupo-12\ChatApi\obj\Debug\net8.0\ChatApi.csproj.AssemblyReference.cache
+C:\Users\JEICO\Integracion-Continua-Sub-Grupo-12\ChatApi\obj\Debug\net8.0\ChatApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JEICO\Integracion-Continua-Sub-Grupo-12\ChatApi\obj\Debug\net8.0\ChatApi.AssemblyInfoInputs.cache
+C:\Users\JEICO\Integracion-Continua-Sub-Grupo-12\ChatApi\obj\Debug\net8.0\ChatApi.AssemblyInfo.cs
+C:\Users\JEICO\Integracion-Continua-Sub-Grupo-12\ChatApi\obj\Debug\net8.0\ChatApi.csproj.CoreCompileInputs.cache
+C:\Users\JEICO\Integracion-Continua-Sub-Grupo-12\ChatApi\obj\Debug\net8.0\ChatApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\JEICO\Integracion-Continua-Sub-Grupo-12\ChatApi\obj\Debug\net8.0\ChatApi.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\JEICO\Integracion-Continua-Sub-Grupo-12\ChatApi\obj\Debug\net8.0\ChatApi.sourcelink.json
+C:\Users\JEICO\Integracion-Continua-Sub-Grupo-12\ChatApi\obj\Debug\net8.0\scopedcss\bundle\ChatApi.styles.css
+C:\Users\JEICO\Integracion-Continua-Sub-Grupo-12\ChatApi\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\JEICO\Integracion-Continua-Sub-Grupo-12\ChatApi\obj\Debug\net8.0\staticwebassets.build.json.cache
+C:\Users\JEICO\Integracion-Continua-Sub-Grupo-12\ChatApi\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\JEICO\Integracion-Continua-Sub-Grupo-12\ChatApi\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\JEICO\Integracion-Continua-Sub-Grupo-12\ChatApi\obj\Debug\net8.0\ChatApi.csproj.Up2Date
+C:\Users\JEICO\Integracion-Continua-Sub-Grupo-12\ChatApi\obj\Debug\net8.0\ChatApi.dll
+C:\Users\JEICO\Integracion-Continua-Sub-Grupo-12\ChatApi\obj\Debug\net8.0\refint\ChatApi.dll
+C:\Users\JEICO\Integracion-Continua-Sub-Grupo-12\ChatApi\obj\Debug\net8.0\ChatApi.pdb
+C:\Users\JEICO\Integracion-Continua-Sub-Grupo-12\ChatApi\obj\Debug\net8.0\ChatApi.genruntimeconfig.cache
+C:\Users\JEICO\Integracion-Continua-Sub-Grupo-12\ChatApi\obj\Debug\net8.0\ref\ChatApi.dll

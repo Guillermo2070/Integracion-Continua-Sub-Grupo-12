@@ -6,33 +6,33 @@ services:
       context: ./ChatApi
       dockerfile: Dockerfile
     ports:
-      - "5235:80"
+      - "5235:5235"
     depends_on:
       - sqlserver
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
     networks:
-      - app-network
+      - chatnetwork
 
   sqlserver:
-    image: mcr.microsoft.com/mssql/server:2019-latest
-    container_name: sqlserver
-    environment:
-      SA_PASSWORD: "YourStrong@Passw0rd"
-      ACCEPT_EULA: "Y"
+    image: mcr.microsoft.com/mssql/server:2022-latest
     ports:
       - "1433:1433"
+    environment:
+      SA_PASSWORD: "ChatApi.2025"
+      ACCEPT_EULA: "Y"
     networks:
-      - app-network
+      - chatnetwork
 
   client:
     image: nginx:alpine
-    container_name: chat-client
     volumes:
       - ./Client:/usr/share/nginx/html
     ports:
       - "8081:80"
     networks:
-      - app-network
+      - chatnetwork
 
 networks:
-  app-network:
+  chatnetwork:
     driver: bridge
