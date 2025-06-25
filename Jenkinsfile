@@ -14,7 +14,7 @@ pipeline {
                     echo 'Construyendo las imágenes de Docker con docker-compose...'
                     // Usamos docker-compose para construir las imágenes definidas en el yml.
                     // --no-cache asegura que se construya todo desde cero, ideal para un entorno de CI.
-                    sh 'docker-compose build --no-cache'
+                    bat 'docker-compose build --no-cache'
                 }
             }
         }
@@ -26,7 +26,7 @@ pipeline {
                     echo 'Ejecutando pruebas unitarias dentro del contenedor de la API...'
                     // Este comando inicia temporalmente el servicio 'chatapi', ejecuta 'dotnet test'
                     // y luego lo elimina gracias a --rm. Asume que tienes un proyecto de pruebas.
-                    sh 'docker-compose run --rm chatapi dotnet test'
+                    bat 'docker-compose run --rm chatapi dotnet test'
                 }
             }
         }
@@ -37,7 +37,7 @@ pipeline {
                 script {
                     echo 'Levantando la aplicación completa en modo detached...'
                     // -d (detached) hace que los contenedores corran en segundo plano.
-                    sh 'docker-compose up -d'
+                    bat 'docker-compose up -d'
                     
                     echo 'La aplicación debería estar disponible en los puertos configurados.'
                     // Se podría agregar un paso de validación aquí (ej. curl a la API)
@@ -53,7 +53,7 @@ pipeline {
             script {
                 echo 'Limpiando el entorno. Deteniendo y eliminando contenedores...'
                 // Es una buena práctica dejar el entorno limpio después de cada ejecución.
-                sh 'docker-compose down'
+                bat 'docker-compose down'
             }
         }
     }
