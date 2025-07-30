@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Chat SignalR</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 40px auto;
+            background-color: #f4f4f4;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        input[type="text"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        ul#messagesList {
+            list-style: none;
+            padding: 0;
+            margin-top: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        .message {
+            padding: 10px;
+            margin: 5px;
+            border-radius: 8px;
+            max-width: 80%;
+            word-wrap: break-word;
+        }
+
+        .own {
+            background-color: #d4eaff;
+            text-align: right;
+            align-self: flex-end;
+        }
+
+        .other {
+            background-color: #e2f6dc;
+            text-align: left;
+            align-self: flex-start;
+        }
+
+        li {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Chat en tiempo real con SignalR</h2>
+
+    <input type="text" id="userInput" placeholder="Tu nombre" />
+    <input type="text" id="messageInput" placeholder="Escribe un mensaje..." />
+    <button onclick="sendMessage()">Enviar</button>
+
+    <ul id="messagesList"></ul>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.5/signalr.min.js"></script>
+    <script>
+        const apiPostUrl = "http://localhost:5235/api/chat/send";
+        const apiGetUrl = "http://localhost:5235/api/chat/messages";
+        const hubUrl = "http://localhost:5235/chatHub";
+
+        let currentUser = "";
+
+        const connection = new signalR.HubConnectionBuilder()
+            .withUrl(hubUrl)
+            .build();
+
+        connection.on("ReceiveMessage", (user, message) => {
+            displayMessage(user, message);
+        });
+
+        connection.start()
+            .then(() => console.log("Conectado al Hub"))
+            .catch(err => console.error("Error al conectar:", err));
+
+        function sendMessage() {
+            const userInput = document.getElementById("userInput");
+            const messageInput = document.getElementById("messageInput");
+
+            const user = userInput.value.trim();
+            const message = messageInput.value.trim();
+
+            if (!user || !message) return;
+
+            currentUser = user;
+
+            fetch(apiPostUrl, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ user, message })
+            })
+                .then(response => {
+                    if (!response.ok) throw new Error("Error al enviar mensaje.");
+                    messageInput.value = "";
+                })
+                .catch(error => console.error("Error:", error));
+        }
+
+        function displayMessage(user, message) {
+            const li = document.createElement("li");
+            const msgDiv = document.createElement("div");
+            msgDiv.className = "message " + (user === currentUser ? "own" : "other");
+            msgDiv.textContent = `${user}: ${message}`;
+            li.appendChild(msgDiv);
+            document.getElementById("messagesList").appendChild(li);
+        }
+    </script>
+</body>
+
+</html>
